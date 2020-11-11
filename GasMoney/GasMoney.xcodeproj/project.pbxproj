@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B5D79EEE1BA25F877ED4D2A /* Pods_GasMoney.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FE827358BA1B534202FB402 /* Pods_GasMoney.framework */; };
 		7A2E7E2C255C5AD70095EC1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2E7E2B255C5AD70095EC1A /* AppDelegate.swift */; };
 		7A2E7E2E255C5AD70095EC1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2E7E2D255C5AD70095EC1A /* SceneDelegate.swift */; };
 		7A2E7E30255C5AD70095EC1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2E7E2F255C5AD70095EC1A /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49970C2D7C45082D1CBF7FE6 /* Pods-GasMoney.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GasMoney.debug.xcconfig"; path = "Target Support Files/Pods-GasMoney/Pods-GasMoney.debug.xcconfig"; sourceTree = "<group>"; };
+		5FE827358BA1B534202FB402 /* Pods_GasMoney.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GasMoney.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A2E7E28255C5AD70095EC1A /* GasMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GasMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A2E7E2B255C5AD70095EC1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A2E7E2D255C5AD70095EC1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		7A2E7E34255C5ADC0095EC1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A2E7E37255C5ADC0095EC1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A2E7E39255C5ADC0095EC1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAB102816D88A9B40DBA8C79 /* Pods-GasMoney.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GasMoney.release.xcconfig"; path = "Target Support Files/Pods-GasMoney/Pods-GasMoney.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B5D79EEE1BA25F877ED4D2A /* Pods_GasMoney.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				7A2E7E2A255C5AD70095EC1A /* GasMoney */,
 				7A2E7E29255C5AD70095EC1A /* Products */,
+				A5485420943A9943F22BA060 /* Pods */,
+				AC0BA2D7961E9C54D57FBC1D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +82,24 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		A5485420943A9943F22BA060 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				49970C2D7C45082D1CBF7FE6 /* Pods-GasMoney.debug.xcconfig */,
+				BAB102816D88A9B40DBA8C79 /* Pods-GasMoney.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AC0BA2D7961E9C54D57FBC1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FE827358BA1B534202FB402 /* Pods_GasMoney.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A2E7E3C255C5ADC0095EC1A /* Build configuration list for PBXNativeTarget "GasMoney" */;
 			buildPhases = (
+				98C30DEF12DF3E0204F334DA /* [CP] Check Pods Manifest.lock */,
 				7A2E7E24255C5AD70095EC1A /* Sources */,
 				7A2E7E25255C5AD70095EC1A /* Frameworks */,
 				7A2E7E26255C5AD70095EC1A /* Resources */,
+				4B783066ADC8F80C37D3199B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -139,6 +166,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B783066ADC8F80C37D3199B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GasMoney/Pods-GasMoney-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GasMoney/Pods-GasMoney-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GasMoney/Pods-GasMoney-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98C30DEF12DF3E0204F334DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GasMoney-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7A2E7E24255C5AD70095EC1A /* Sources */ = {
@@ -291,6 +360,7 @@
 		};
 		7A2E7E3D255C5ADC0095EC1A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49970C2D7C45082D1CBF7FE6 /* Pods-GasMoney.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		7A2E7E3E255C5ADC0095EC1A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAB102816D88A9B40DBA8C79 /* Pods-GasMoney.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
