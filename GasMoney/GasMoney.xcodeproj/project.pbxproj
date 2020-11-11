@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,7 +11,6 @@
 		7A2E7E2C255C5AD70095EC1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2E7E2B255C5AD70095EC1A /* AppDelegate.swift */; };
 		7A2E7E2E255C5AD70095EC1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2E7E2D255C5AD70095EC1A /* SceneDelegate.swift */; };
 		7A2E7E30255C5AD70095EC1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2E7E2F255C5AD70095EC1A /* ViewController.swift */; };
-		7A2E7E33255C5AD70095EC1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E7E31255C5AD70095EC1A /* Main.storyboard */; };
 		7A2E7E35255C5ADC0095EC1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E7E34255C5ADC0095EC1A /* Assets.xcassets */; };
 		7A2E7E38255C5ADC0095EC1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E7E36255C5ADC0095EC1A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -23,7 +22,6 @@
 		7A2E7E2B255C5AD70095EC1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A2E7E2D255C5AD70095EC1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7A2E7E2F255C5AD70095EC1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7A2E7E32255C5AD70095EC1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7A2E7E34255C5ADC0095EC1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A2E7E37255C5ADC0095EC1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A2E7E39255C5ADC0095EC1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,7 +72,6 @@
 			children = (
 				7A2E7E2B255C5AD70095EC1A /* AppDelegate.swift */,
 				7A2E7E2D255C5AD70095EC1A /* SceneDelegate.swift */,
-				7A2E7E31255C5AD70095EC1A /* Main.storyboard */,
 				7A2E7E34255C5ADC0095EC1A /* Assets.xcassets */,
 				7A2E7E36255C5ADC0095EC1A /* LaunchScreen.storyboard */,
 				7A2E7E39255C5ADC0095EC1A /* Info.plist */,
@@ -88,7 +85,6 @@
 				49970C2D7C45082D1CBF7FE6 /* Pods-GasMoney.debug.xcconfig */,
 				BAB102816D88A9B40DBA8C79 /* Pods-GasMoney.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -161,7 +157,6 @@
 			files = (
 				7A2E7E38255C5ADC0095EC1A /* LaunchScreen.storyboard in Resources */,
 				7A2E7E35255C5ADC0095EC1A /* Assets.xcassets in Resources */,
-				7A2E7E33255C5AD70095EC1A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,14 +218,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7A2E7E31255C5AD70095EC1A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7A2E7E32255C5AD70095EC1A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7A2E7E36255C5ADC0095EC1A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -366,7 +353,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PPT8LS6UXM;
-				INFOPLIST_FILE = GasMoney/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GasMoney/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -386,7 +373,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PPT8LS6UXM;
-				INFOPLIST_FILE = GasMoney/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GasMoney/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
