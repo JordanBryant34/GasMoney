@@ -159,6 +159,8 @@ class TripCell: UICollectionViewCell {
         viewButton.heightAnchor.constraint(equalTo: detailView.heightAnchor, multiplier: 0.5).isActive = true
         viewButton.widthAnchor.constraint(equalToConstant: 80).isActive = true
         
+        //commit
+        
     }
     
     private func createShadow() {
