@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B5D79EEE1BA25F877ED4D2A /* Pods_GasMoney.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FE827358BA1B534202FB402 /* Pods_GasMoney.framework */; };
-		5ADBE83F2564408100EE0A18 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5ADBE83E2564408100EE0A18 /* GoogleService-Info.plist */; };
+		5A32D4BF2565E79700F61663 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A32D4BE2565E79700F61663 /* GoogleService-Info.plist */; };
+		5A75B636256324DE003BBA5D /* TripsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75B635256324DE003BBA5D /* TripsListViewController.swift */; };
+		5A75B63A2563264E003BBA5D /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75B6392563264E003BBA5D /* UIColorExtension.swift */; };
+		5A75B63F25632CC5003BBA5D /* TripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75B63E25632CC5003BBA5D /* TripCell.swift */; };
 		5ADBE84625645B7400EE0A18 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADBE84525645B7400EE0A18 /* UserController.swift */; };
 		5ADBE84925645BA500EE0A18 /* TripController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADBE84825645BA500EE0A18 /* TripController.swift */; };
 		5ADBE84C25645BBD00EE0A18 /* CostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADBE84B25645BBD00EE0A18 /* CostController.swift */; };
@@ -16,6 +18,14 @@
 		5ADBE853256461AC00EE0A18 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADBE852256461AC00EE0A18 /* User.swift */; };
 		5ADBE85B256461C600EE0A18 /* Cost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADBE85A256461C600EE0A18 /* Cost.swift */; };
 		5ADBE85F256481B000EE0A18 /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADBE85E256481B000EE0A18 /* AuthError.swift */; };
+		7A2D09F42565840D00C6C77C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A2D09F32565840D00C6C77C /* GoogleService-Info.plist */; };
+		7A2D09FA2565863C00C6C77C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2D09F92565863C00C6C77C /* LoginViewController.swift */; };
+		7A2D0A002565886700C6C77C /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2D09FF2565886700C6C77C /* UIViewControllerExtension.swift */; };
+		7A2D0A03256588A400C6C77C /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2D0A02256588A400C6C77C /* UIViewExtension.swift */; };
+		7A2D0A0625658A8200C6C77C /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2D0A0525658A8200C6C77C /* Helpers.swift */; };
+		7A2D0A0A25658C0B00C6C77C /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2D0A0925658C0B00C6C77C /* RoundedButton.swift */; };
+		7A2D0A0E25658C2700C6C77C /* GasMoneyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2D0A0D25658C2700C6C77C /* GasMoneyTextField.swift */; };
+		7A2D0A1125658CFF00C6C77C /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2D0A1025658CFF00C6C77C /* UIImageExtension.swift */; };
 		7A2E7E2C255C5AD70095EC1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2E7E2B255C5AD70095EC1A /* AppDelegate.swift */; };
 		7A2E7E2E255C5AD70095EC1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2E7E2D255C5AD70095EC1A /* SceneDelegate.swift */; };
 		7A2E7E35255C5ADC0095EC1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E7E34255C5ADC0095EC1A /* Assets.xcassets */; };
@@ -23,8 +33,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		49970C2D7C45082D1CBF7FE6 /* Pods-GasMoney.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GasMoney.debug.xcconfig"; path = "Target Support Files/Pods-GasMoney/Pods-GasMoney.debug.xcconfig"; sourceTree = "<group>"; };
-		5ADBE83E2564408100EE0A18 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5A32D4BE2565E79700F61663 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5A75B635256324DE003BBA5D /* TripsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsListViewController.swift; sourceTree = "<group>"; };
+		5A75B6392563264E003BBA5D /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		5A75B63E25632CC5003BBA5D /* TripCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCell.swift; sourceTree = "<group>"; };
 		5ADBE84525645B7400EE0A18 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
 		5ADBE84825645BA500EE0A18 /* TripController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripController.swift; sourceTree = "<group>"; };
 		5ADBE84B25645BBD00EE0A18 /* CostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostController.swift; sourceTree = "<group>"; };
@@ -32,15 +44,20 @@
 		5ADBE852256461AC00EE0A18 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5ADBE85A256461C600EE0A18 /* Cost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cost.swift; sourceTree = "<group>"; };
 		5ADBE85E256481B000EE0A18 /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
-		5ADBE8672565DA0E00EE0A18 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		5FE827358BA1B534202FB402 /* Pods_GasMoney.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GasMoney.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A2D09F32565840D00C6C77C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "/Downloads/GoogleService-Info.plist"; sourceTree = "<absolute>"; };
+		7A2D09F92565863C00C6C77C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7A2D09FF2565886700C6C77C /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		7A2D0A02256588A400C6C77C /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		7A2D0A0525658A8200C6C77C /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		7A2D0A0925658C0B00C6C77C /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		7A2D0A0D25658C2700C6C77C /* GasMoneyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasMoneyTextField.swift; sourceTree = "<group>"; };
+		7A2D0A1025658CFF00C6C77C /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		7A2E7E28255C5AD70095EC1A /* GasMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GasMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A2E7E2B255C5AD70095EC1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A2E7E2D255C5AD70095EC1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7A2E7E34255C5ADC0095EC1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A2E7E37255C5ADC0095EC1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A2E7E39255C5ADC0095EC1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BAB102816D88A9B40DBA8C79 /* Pods-GasMoney.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GasMoney.release.xcconfig"; path = "Target Support Files/Pods-GasMoney/Pods-GasMoney.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,16 +65,53 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B5D79EEE1BA25F877ED4D2A /* Pods_GasMoney.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A32D4BA2565E63300F61663 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				7A2D09F32565840D00C6C77C /* GoogleService-Info.plist */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		5A75B6382563261C003BBA5D /* Helpers And Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5A75B6392563264E003BBA5D /* UIColorExtension.swift */,
+				7A2D09FF2565886700C6C77C /* UIViewControllerExtension.swift */,
+				7A2D0A02256588A400C6C77C /* UIViewExtension.swift */,
+				7A2D0A0525658A8200C6C77C /* Helpers.swift */,
+				7A2D0A1025658CFF00C6C77C /* UIImageExtension.swift */,
+			);
+			path = "Helpers And Extensions";
+			sourceTree = "<group>";
+		};
+		5A75B63C25632C01003BBA5D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7A2D0A0825658BE600C6C77C /* Custom Views */,
+				5A75B63D25632C1A003BBA5D /* Collection View Cell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5A75B63D25632C1A003BBA5D /* Collection View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5A75B63E25632CC5003BBA5D /* TripCell.swift */,
+			);
+			path = "Collection View Cell";
+			sourceTree = "<group>";
+		};
 		5ADBE8632565D9BD00EE0A18 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7A2D09F7256585D600C6C77C /* View Controllers */,
 				5ADBE8642565D9C400EE0A18 /* Model Controllers */,
 			);
 			path = Controllers;
@@ -84,13 +138,39 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		7A2D09F7256585D600C6C77C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5A75B635256324DE003BBA5D /* TripsListViewController.swift */,
+				7A2D09F82565860D00C6C77C /* Login and Sign Up */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		7A2D09F82565860D00C6C77C /* Login and Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				7A2D09F92565863C00C6C77C /* LoginViewController.swift */,
+			);
+			path = "Login and Sign Up";
+			sourceTree = "<group>";
+		};
+		7A2D0A0825658BE600C6C77C /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				7A2D0A0925658C0B00C6C77C /* RoundedButton.swift */,
+				7A2D0A0D25658C2700C6C77C /* GasMoneyTextField.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
 		7A2E7E1F255C5AD70095EC1A = {
 			isa = PBXGroup;
 			children = (
 				7A2E7E2A255C5AD70095EC1A /* GasMoney */,
 				7A2E7E29255C5AD70095EC1A /* Products */,
 				A5485420943A9943F22BA060 /* Pods */,
-				AC0BA2D7961E9C54D57FBC1D /* Frameworks */,
+				5A32D4BA2565E63300F61663 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,8 +187,10 @@
 			children = (
 				5ADBE8662565D9E600EE0A18 /* Models */,
 				5ADBE8632565D9BD00EE0A18 /* Controllers */,
+				5A75B63C25632C01003BBA5D /* Views */,
+				5A75B6382563261C003BBA5D /* Helpers And Extensions */,
 				7A2E7E40255C5B0E0095EC1A /* Resources */,
-				5ADBE83E2564408100EE0A18 /* GoogleService-Info.plist */,
+				5A32D4BE2565E79700F61663 /* GoogleService-Info.plist */,
 			);
 			path = GasMoney;
 			sourceTree = "<group>";
@@ -116,7 +198,6 @@
 		7A2E7E40255C5B0E0095EC1A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5ADBE8672565DA0E00EE0A18 /* GoogleService-Info.plist */,
 				7A2E7E2B255C5AD70095EC1A /* AppDelegate.swift */,
 				7A2E7E2D255C5AD70095EC1A /* SceneDelegate.swift */,
 				7A2E7E34255C5ADC0095EC1A /* Assets.xcassets */,
@@ -129,18 +210,8 @@
 		A5485420943A9943F22BA060 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				49970C2D7C45082D1CBF7FE6 /* Pods-GasMoney.debug.xcconfig */,
-				BAB102816D88A9B40DBA8C79 /* Pods-GasMoney.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		AC0BA2D7961E9C54D57FBC1D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5FE827358BA1B534202FB402 /* Pods_GasMoney.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,11 +221,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A2E7E3C255C5ADC0095EC1A /* Build configuration list for PBXNativeTarget "GasMoney" */;
 			buildPhases = (
-				98C30DEF12DF3E0204F334DA /* [CP] Check Pods Manifest.lock */,
 				7A2E7E24255C5AD70095EC1A /* Sources */,
 				7A2E7E25255C5AD70095EC1A /* Frameworks */,
 				7A2E7E26255C5AD70095EC1A /* Resources */,
-				4B783066ADC8F80C37D3199B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -203,54 +272,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A2E7E38255C5ADC0095EC1A /* LaunchScreen.storyboard in Resources */,
+				5A32D4BF2565E79700F61663 /* GoogleService-Info.plist in Resources */,
 				7A2E7E35255C5ADC0095EC1A /* Assets.xcassets in Resources */,
-				5ADBE83F2564408100EE0A18 /* GoogleService-Info.plist in Resources */,
+				7A2D09F42565840D00C6C77C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		4B783066ADC8F80C37D3199B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GasMoney/Pods-GasMoney-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GasMoney/Pods-GasMoney-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GasMoney/Pods-GasMoney-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		98C30DEF12DF3E0204F334DA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GasMoney-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7A2E7E24255C5AD70095EC1A /* Sources */ = {
@@ -258,6 +286,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5ADBE85B256461C600EE0A18 /* Cost.swift in Sources */,
+				7A2D09FA2565863C00C6C77C /* LoginViewController.swift in Sources */,
+				7A2D0A0A25658C0B00C6C77C /* RoundedButton.swift in Sources */,
+				5A75B636256324DE003BBA5D /* TripsListViewController.swift in Sources */,
+				5A75B63A2563264E003BBA5D /* UIColorExtension.swift in Sources */,
 				7A2E7E2C255C5AD70095EC1A /* AppDelegate.swift in Sources */,
 				5ADBE84C25645BBD00EE0A18 /* CostController.swift in Sources */,
 				5ADBE85F256481B000EE0A18 /* AuthError.swift in Sources */,
@@ -265,7 +297,13 @@
 				5ADBE853256461AC00EE0A18 /* User.swift in Sources */,
 				5ADBE84925645BA500EE0A18 /* TripController.swift in Sources */,
 				5ADBE8502564617F00EE0A18 /* Trip.swift in Sources */,
+				7A2D0A0625658A8200C6C77C /* Helpers.swift in Sources */,
+				5A75B63F25632CC5003BBA5D /* TripCell.swift in Sources */,
+				7A2D0A002565886700C6C77C /* UIViewControllerExtension.swift in Sources */,
+				7A2D0A03256588A400C6C77C /* UIViewExtension.swift in Sources */,
+				7A2D0A0E25658C2700C6C77C /* GasMoneyTextField.swift in Sources */,
 				7A2E7E2E255C5AD70095EC1A /* SceneDelegate.swift in Sources */,
+				7A2D0A1125658CFF00C6C77C /* UIImageExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,7 +439,6 @@
 		};
 		7A2E7E3D255C5ADC0095EC1A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49970C2D7C45082D1CBF7FE6 /* Pods-GasMoney.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -421,7 +458,6 @@
 		};
 		7A2E7E3E255C5ADC0095EC1A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BAB102816D88A9B40DBA8C79 /* Pods-GasMoney.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
