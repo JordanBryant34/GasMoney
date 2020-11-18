@@ -8,16 +8,4 @@
 import Foundation
 
 class CostController {
-    
-    func createCost() {
-        
-    }
-    
-    func updateCost() {
-        
-    }
-    
-    func deleteCost() {
-        
-    }
 }
