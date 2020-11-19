@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A32D4BF2565E79700F61663 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A32D4BE2565E79700F61663 /* GoogleService-Info.plist */; };
+		5A00F7232565F157007D9F1D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A00F7222565F157007D9F1D /* GoogleService-Info.plist */; };
 		5A75B636256324DE003BBA5D /* TripsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75B635256324DE003BBA5D /* TripsListViewController.swift */; };
 		5A75B63A2563264E003BBA5D /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75B6392563264E003BBA5D /* UIColorExtension.swift */; };
 		5A75B63F25632CC5003BBA5D /* TripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75B63E25632CC5003BBA5D /* TripCell.swift */; };
@@ -18,7 +18,6 @@
 		5ADBE853256461AC00EE0A18 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADBE852256461AC00EE0A18 /* User.swift */; };
 		5ADBE85B256461C600EE0A18 /* Cost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADBE85A256461C600EE0A18 /* Cost.swift */; };
 		5ADBE85F256481B000EE0A18 /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADBE85E256481B000EE0A18 /* AuthError.swift */; };
-		7A2D09F42565840D00C6C77C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A2D09F32565840D00C6C77C /* GoogleService-Info.plist */; };
 		7A2D09FA2565863C00C6C77C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2D09F92565863C00C6C77C /* LoginViewController.swift */; };
 		7A2D0A002565886700C6C77C /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2D09FF2565886700C6C77C /* UIViewControllerExtension.swift */; };
 		7A2D0A03256588A400C6C77C /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2D0A02256588A400C6C77C /* UIViewExtension.swift */; };
@@ -30,10 +29,11 @@
 		7A2E7E2E255C5AD70095EC1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2E7E2D255C5AD70095EC1A /* SceneDelegate.swift */; };
 		7A2E7E35255C5ADC0095EC1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E7E34255C5ADC0095EC1A /* Assets.xcassets */; };
 		7A2E7E38255C5ADC0095EC1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E7E36255C5ADC0095EC1A /* LaunchScreen.storyboard */; };
+		CC08ED3E14C533072A32DE22 /* Pods_GasMoney.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82B93B6AFFACA9C992B253CF /* Pods_GasMoney.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5A32D4BE2565E79700F61663 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5A00F7222565F157007D9F1D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5A75B635256324DE003BBA5D /* TripsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsListViewController.swift; sourceTree = "<group>"; };
 		5A75B6392563264E003BBA5D /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		5A75B63E25632CC5003BBA5D /* TripCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCell.swift; sourceTree = "<group>"; };
@@ -58,6 +58,9 @@
 		7A2E7E34255C5ADC0095EC1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A2E7E37255C5ADC0095EC1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A2E7E39255C5ADC0095EC1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82B93B6AFFACA9C992B253CF /* Pods_GasMoney.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GasMoney.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F5309EE5328BB95F00A2204 /* Pods-GasMoney.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GasMoney.release.xcconfig"; path = "Target Support Files/Pods-GasMoney/Pods-GasMoney.release.xcconfig"; sourceTree = "<group>"; };
+		E7E3D556E88586B497FC5198 /* Pods-GasMoney.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GasMoney.debug.xcconfig"; path = "Target Support Files/Pods-GasMoney/Pods-GasMoney.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC08ED3E14C533072A32DE22 /* Pods_GasMoney.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +175,7 @@
 				7A2E7E29255C5AD70095EC1A /* Products */,
 				A5485420943A9943F22BA060 /* Pods */,
 				5A32D4BA2565E63300F61663 /* Recovered References */,
+				8CFD6BBBC445E10A00A6DD77 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,12 +190,12 @@
 		7A2E7E2A255C5AD70095EC1A /* GasMoney */ = {
 			isa = PBXGroup;
 			children = (
+				5A00F7222565F157007D9F1D /* GoogleService-Info.plist */,
 				5ADBE8662565D9E600EE0A18 /* Models */,
 				5ADBE8632565D9BD00EE0A18 /* Controllers */,
 				5A75B63C25632C01003BBA5D /* Views */,
 				5A75B6382563261C003BBA5D /* Helpers And Extensions */,
 				7A2E7E40255C5B0E0095EC1A /* Resources */,
-				5A32D4BE2565E79700F61663 /* GoogleService-Info.plist */,
 			);
 			path = GasMoney;
 			sourceTree = "<group>";
@@ -207,9 +212,19 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		8CFD6BBBC445E10A00A6DD77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82B93B6AFFACA9C992B253CF /* Pods_GasMoney.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A5485420943A9943F22BA060 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				E7E3D556E88586B497FC5198 /* Pods-GasMoney.debug.xcconfig */,
+				8F5309EE5328BB95F00A2204 /* Pods-GasMoney.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -221,9 +236,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A2E7E3C255C5ADC0095EC1A /* Build configuration list for PBXNativeTarget "GasMoney" */;
 			buildPhases = (
+				C4DBD58D40CC6E3D28A8AA42 /* [CP] Check Pods Manifest.lock */,
 				7A2E7E24255C5AD70095EC1A /* Sources */,
 				7A2E7E25255C5AD70095EC1A /* Frameworks */,
 				7A2E7E26255C5AD70095EC1A /* Resources */,
+				B29B65CD4639BC472F478D8E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -272,13 +289,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A2E7E38255C5ADC0095EC1A /* LaunchScreen.storyboard in Resources */,
-				5A32D4BF2565E79700F61663 /* GoogleService-Info.plist in Resources */,
+				5A00F7232565F157007D9F1D /* GoogleService-Info.plist in Resources */,
 				7A2E7E35255C5ADC0095EC1A /* Assets.xcassets in Resources */,
-				7A2D09F42565840D00C6C77C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B29B65CD4639BC472F478D8E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GasMoney/Pods-GasMoney-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GasMoney/Pods-GasMoney-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GasMoney/Pods-GasMoney-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4DBD58D40CC6E3D28A8AA42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GasMoney-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7A2E7E24255C5AD70095EC1A /* Sources */ = {
@@ -439,6 +497,7 @@
 		};
 		7A2E7E3D255C5ADC0095EC1A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7E3D556E88586B497FC5198 /* Pods-GasMoney.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -458,6 +517,7 @@
 		};
 		7A2E7E3E255C5ADC0095EC1A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F5309EE5328BB95F00A2204 /* Pods-GasMoney.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
