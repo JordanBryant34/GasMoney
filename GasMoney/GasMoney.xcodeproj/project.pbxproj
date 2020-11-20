@@ -8,34 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		0B5D79EEE1BA25F877ED4D2A /* Pods_GasMoney.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FE827358BA1B534202FB402 /* Pods_GasMoney.framework */; };
-
-		5ADBE83F2564408100EE0A18 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5ADBE83E2564408100EE0A18 /* GoogleService-Info.plist */; };
-
 		5A75B636256324DE003BBA5D /* TripsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75B635256324DE003BBA5D /* TripsListViewController.swift */; };
 		5A75B63A2563264E003BBA5D /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75B6392563264E003BBA5D /* UIColorExtension.swift */; };
 		5A75B63F25632CC5003BBA5D /* TripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75B63E25632CC5003BBA5D /* TripCell.swift */; };
-
+		5A75B64C25659FD5003BBA5D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75B64B25659FD5003BBA5D /* ProfileViewController.swift */; };
+		5A75B64F2565C391003BBA5D /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75B64E2565C391003BBA5D /* ProfileCell.swift */; };
+		5A75B6532565DD45003BBA5D /* ProfileTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75B6522565DD45003BBA5D /* ProfileTableViewHeader.swift */; };
 		7A2E7E2C255C5AD70095EC1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2E7E2B255C5AD70095EC1A /* AppDelegate.swift */; };
 		7A2E7E2E255C5AD70095EC1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2E7E2D255C5AD70095EC1A /* SceneDelegate.swift */; };
-		7A2E7E30255C5AD70095EC1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2E7E2F255C5AD70095EC1A /* ViewController.swift */; };
 		7A2E7E35255C5ADC0095EC1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E7E34255C5ADC0095EC1A /* Assets.xcassets */; };
 		7A2E7E38255C5ADC0095EC1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E7E36255C5ADC0095EC1A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		49970C2D7C45082D1CBF7FE6 /* Pods-GasMoney.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GasMoney.debug.xcconfig"; path = "Target Support Files/Pods-GasMoney/Pods-GasMoney.debug.xcconfig"; sourceTree = "<group>"; };
-
-		5ADBE83E2564408100EE0A18 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-
 		5A75B635256324DE003BBA5D /* TripsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsListViewController.swift; sourceTree = "<group>"; };
 		5A75B6392563264E003BBA5D /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		5A75B63E25632CC5003BBA5D /* TripCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCell.swift; sourceTree = "<group>"; };
-
+		5A75B64B25659FD5003BBA5D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		5A75B64E2565C391003BBA5D /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		5A75B6522565DD45003BBA5D /* ProfileTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewHeader.swift; sourceTree = "<group>"; };
 		5FE827358BA1B534202FB402 /* Pods_GasMoney.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GasMoney.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A2E7E28255C5AD70095EC1A /* GasMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GasMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A2E7E2B255C5AD70095EC1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A2E7E2D255C5AD70095EC1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7A2E7E2F255C5AD70095EC1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7A2E7E34255C5ADC0095EC1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A2E7E37255C5ADC0095EC1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A2E7E39255C5ADC0095EC1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,6 +61,7 @@
 		5A75B63C25632C01003BBA5D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5A75B6512565DD22003BBA5D /* Table View Cell */,
 				5A75B63D25632C1A003BBA5D /* Collection View Cell */,
 			);
 			path = Views;
@@ -76,6 +73,32 @@
 				5A75B63E25632CC5003BBA5D /* TripCell.swift */,
 			);
 			path = "Collection View Cell";
+			sourceTree = "<group>";
+		};
+		5A75B6512565DD22003BBA5D /* Table View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5A75B64E2565C391003BBA5D /* ProfileCell.swift */,
+				5A75B6522565DD45003BBA5D /* ProfileTableViewHeader.swift */,
+			);
+			path = "Table View Cell";
+			sourceTree = "<group>";
+		};
+		5A75B66225682EC2003BBA5D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5A75B66325682ECB003BBA5D /* View Controllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5A75B66325682ECB003BBA5D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5A75B635256324DE003BBA5D /* TripsListViewController.swift */,
+				5A75B64B25659FD5003BBA5D /* ProfileViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		7A2E7E1F255C5AD70095EC1A = {
@@ -99,15 +122,10 @@
 		7A2E7E2A255C5AD70095EC1A /* GasMoney */ = {
 			isa = PBXGroup;
 			children = (
-
-				5ADBE83E2564408100EE0A18 /* GoogleService-Info.plist */,
-
+				5A75B66225682EC2003BBA5D /* Controllers */,
 				5A75B63C25632C01003BBA5D /* Views */,
 				5A75B6382563261C003BBA5D /* Helpers And Extensions */,
-
-				7A2E7E2F255C5AD70095EC1A /* ViewController.swift */,
 				7A2E7E40255C5B0E0095EC1A /* Resources */,
-				5A75B635256324DE003BBA5D /* TripsListViewController.swift */,
 			);
 			path = GasMoney;
 			sourceTree = "<group>";
@@ -202,7 +220,6 @@
 			files = (
 				7A2E7E38255C5ADC0095EC1A /* LaunchScreen.storyboard in Resources */,
 				7A2E7E35255C5ADC0095EC1A /* Assets.xcassets in Resources */,
-				5ADBE83F2564408100EE0A18 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,11 +272,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A2E7E30255C5AD70095EC1A /* ViewController.swift in Sources */,
 				5A75B636256324DE003BBA5D /* TripsListViewController.swift in Sources */,
 				5A75B63A2563264E003BBA5D /* UIColorExtension.swift in Sources */,
 				7A2E7E2C255C5AD70095EC1A /* AppDelegate.swift in Sources */,
+				5A75B64C25659FD5003BBA5D /* ProfileViewController.swift in Sources */,
+				5A75B64F2565C391003BBA5D /* ProfileCell.swift in Sources */,
 				5A75B63F25632CC5003BBA5D /* TripCell.swift in Sources */,
+				5A75B6532565DD45003BBA5D /* ProfileTableViewHeader.swift in Sources */,
 				7A2E7E2E255C5AD70095EC1A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

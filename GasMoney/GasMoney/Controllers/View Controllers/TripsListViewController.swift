@@ -33,12 +33,32 @@ class TripsListViewController: UIViewController {
         title = "Your Trips"
         view.backgroundColor = .offWhite()
         
+        profileNavigationItem()
+        addNavigationItem()
+        
         view.addSubview(collectionView)
         
         collectionView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         collectionView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         collectionView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+    }
+    
+    private func profileNavigationItem() {
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Profile", style: .plain, target: self, action: #selector(profileButtonTapped))
+    }
+    
+    @objc func profileButtonTapped() {
+        print(123)
+        navigationController?.pushViewController(ProfileViewController(), animated: true)
+    }
+    
+    private func addNavigationItem() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonTapped))
+    }
+    
+    @objc func addButtonTapped() {
+        print("works")
     }
     
 }
