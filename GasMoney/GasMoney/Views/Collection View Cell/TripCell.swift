@@ -9,7 +9,6 @@ import UIKit
 
 class TripCell: UICollectionViewCell {
     
-    //MARK: - Cell setup
     let mapImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "TestMapImage")
@@ -29,7 +28,6 @@ class TripCell: UICollectionViewCell {
     
     let titleLabel: UILabel = {
         let titleLabel = UILabel()
-        titleLabel.text = "Title Name"
         titleLabel.textColor = .white
         titleLabel.font = UIFont.boldSystemFont(ofSize: 20)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -38,7 +36,6 @@ class TripCell: UICollectionViewCell {
     
     let participantsLabel: UILabel = {
         let participantsLabel = UILabel()
-        participantsLabel.text = "5 participants"
         participantsLabel.sizeToFit()
         participantsLabel.textColor = .subLabelGray()
         participantsLabel.font = UIFont.boldSystemFont(ofSize: 15)
@@ -46,7 +43,7 @@ class TripCell: UICollectionViewCell {
         return participantsLabel
     }()
     
-    let destinationTitleLabel: UILabel = {
+    private let destinationTitleLabel: UILabel = {
         let destinationLabel = UILabel()
         destinationLabel.text = "Destination"
         destinationLabel.textColor = .gasGreen()
@@ -55,19 +52,15 @@ class TripCell: UICollectionViewCell {
         return destinationLabel
     }()
     
-    //MARK: - Locations
     let destinationLabel: UILabel = {
         let destinationLabel = UILabel()
-        destinationLabel.text = "fsdkfdgfdgdsgsdgsdfsdfdsggfdfgdfgfdsdfsfdfgdsgffdgsfdgsdfgdsgfdsgsgsgsgsdg"
         destinationLabel.textColor = .subLabelGray()
         destinationLabel.font = UIFont.boldSystemFont(ofSize: 13)
         destinationLabel.translatesAutoresizingMaskIntoConstraints = false
         return destinationLabel
     }()
     
-    
-    //MARK: - Cost
-    let costTitleLabel: UILabel = {
+    private let costTitleLabel: UILabel = {
         let costTitleLabel = UILabel()
         costTitleLabel.text = "Cost"
         costTitleLabel.textColor = .gasGreen()
@@ -78,26 +71,24 @@ class TripCell: UICollectionViewCell {
     
     let costLabel: UILabel = {
         let costLabel = UILabel()
-        costLabel.text = "$" + "100.00"
         costLabel.textColor = .subLabelGray()
         costLabel.font = UIFont.boldSystemFont(ofSize: 13)
         costLabel.translatesAutoresizingMaskIntoConstraints = false
         return costLabel
     }()
     
-    //MARK: - View Button
     let viewButton: UIButton = {
         let viewButton = UIButton()
         viewButton.setTitle("View", for: .normal)
         viewButton.setTitleColor(.gasGreen(), for: .normal)
-        viewButton.addTarget(self, action: #selector(viewButtonTapped), for: .touchUpInside)
         viewButton.translatesAutoresizingMaskIntoConstraints = false
-        
         return viewButton
     }()
     
-    @objc func viewButtonTapped(sender: UIButton!) {
-        print("Something")
+    var trip: Trip? {
+        didSet {
+            setData()
+        }
     }
     
     override func layoutSubviews() {
@@ -158,9 +149,15 @@ class TripCell: UICollectionViewCell {
         viewButton.rightAnchor.constraint(equalTo: detailView.rightAnchor, constant: -15).isActive = true
         viewButton.heightAnchor.constraint(equalTo: detailView.heightAnchor, multiplier: 0.5).isActive = true
         viewButton.widthAnchor.constraint(equalToConstant: 80).isActive = true
+    }
+    
+    private func setData() {
+        guard let trip = trip else { return }
         
-        //commit
-        
+        costLabel.text = "$\(trip.totalCost)"
+        titleLabel.text = trip.name
+        participantsLabel.text = "\(trip.participants.count) participants"
+        destinationLabel.text = trip.destination
     }
     
     private func createShadow() {
@@ -172,6 +169,6 @@ class TripCell: UICollectionViewCell {
         layer.shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: layer.cornerRadius).cgPath
         backgroundColor = .white
         layer.cornerRadius = 10
-        
     }
+    
 }
