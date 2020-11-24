@@ -13,15 +13,15 @@ class Trip {
     let id: String
     var destination: String
     var origin: String
-    var participants: [User]
+    var participants: [String]
     var description: String?
     var costs: [Cost]
     
     var totalCost: Double {
-        return 0
+        return costs.map({$0.amount}).reduce(0, +)
     }
     
-    init(name: String, id: String, destination: String, origin: String, participants: [User] = [], description: String? = nil, costs: [Cost] = []){
+    init(name: String, id: String, destination: String, origin: String, participants: [String] = [], description: String? = nil, costs: [Cost] = []){
         self.name = name
         self.id = id
         self.destination = destination
@@ -42,17 +42,18 @@ extension Trip {
         guard let id = dictionary["id"] as? String else { return nil }
         let description = dictionary["description"] as? String
         
-        var participantsArray: [User] = []
+        var participantsArray: [String] = []
         if let participantsDict = dictionary["participants"] as? [String : Any] {
-            for key in participantsDict.keys {
-                //TODO: instantiate users and add them to the participants array
-            }
+            let participants = Array(participantsDict.keys)
+            participantsArray = participants
         }
         
         var costsArray: [Cost] = []
         if let costsDict = dictionary["costs"] as? [String : Any] {
             for key in costsDict.keys {
-                //TODO: instantiate costs and add them to the costs array
+                if let costDict = costsDict[key] as? [String : Any], let cost = Cost(dictionary: costDict) {
+                    costsArray.append(cost)
+                }
             }
         }
         

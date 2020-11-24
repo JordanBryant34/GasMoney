@@ -154,10 +154,16 @@ class TripCell: UICollectionViewCell {
     private func setData() {
         guard let trip = trip else { return }
         
-        costLabel.text = "$\(trip.totalCost)"
         titleLabel.text = trip.name
         participantsLabel.text = "\(trip.participants.count) participants"
         destinationLabel.text = trip.destination
+        
+        let formatter = NumberFormatter()
+        formatter.locale = Locale.current
+        formatter.numberStyle = .currency
+        if let formattedTotalCost = formatter.string(from: trip.totalCost as NSNumber) {
+            costLabel.text = "\(formattedTotalCost)"
+        }
     }
     
     private func createShadow() {
