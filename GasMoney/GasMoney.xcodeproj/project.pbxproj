@@ -28,6 +28,7 @@
 		7A2D0A0A25658C0B00C6C77C /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2D0A0925658C0B00C6C77C /* RoundedButton.swift */; };
 		7A2D0A0E25658C2700C6C77C /* GasMoneyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2D0A0D25658C2700C6C77C /* GasMoneyTextField.swift */; };
 		7A2D0A1125658CFF00C6C77C /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2D0A1025658CFF00C6C77C /* UIImageExtension.swift */; };
+		7A2D0A7E256C52FE00C6C77C /* NoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2D0A7D256C52FE00C6C77C /* NoDataView.swift */; };
 		7A2E7E2C255C5AD70095EC1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2E7E2B255C5AD70095EC1A /* AppDelegate.swift */; };
 		7A2E7E2E255C5AD70095EC1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2E7E2D255C5AD70095EC1A /* SceneDelegate.swift */; };
 		7A2E7E35255C5ADC0095EC1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E7E34255C5ADC0095EC1A /* Assets.xcassets */; };
@@ -59,6 +60,7 @@
 		7A2D0A0925658C0B00C6C77C /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		7A2D0A0D25658C2700C6C77C /* GasMoneyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasMoneyTextField.swift; sourceTree = "<group>"; };
 		7A2D0A1025658CFF00C6C77C /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		7A2D0A7D256C52FE00C6C77C /* NoDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDataView.swift; sourceTree = "<group>"; };
 		7A2E7E28255C5AD70095EC1A /* GasMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GasMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A2E7E2B255C5AD70095EC1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A2E7E2D255C5AD70095EC1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 			children = (
 				7A2D0A0925658C0B00C6C77C /* RoundedButton.swift */,
 				7A2D0A0D25658C2700C6C77C /* GasMoneyTextField.swift */,
+				7A2D0A7D256C52FE00C6C77C /* NoDataView.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				5ADBE853256461AC00EE0A18 /* User.swift in Sources */,
 				5ADBE84925645BA500EE0A18 /* TripController.swift in Sources */,
 				5ADBE8502564617F00EE0A18 /* Trip.swift in Sources */,
+				7A2D0A7E256C52FE00C6C77C /* NoDataView.swift in Sources */,
 				7A2D0A0625658A8200C6C77C /* Helpers.swift in Sources */,
 				5A49B8F8256873CF009BD00B /* ProfileViewController.swift in Sources */,
 				5A75B63F25632CC5003BBA5D /* TripCell.swift in Sources */,
@@ -524,7 +528,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 35AF4SXRC7;
+				DEVELOPMENT_TEAM = PPT8LS6UXM;
 				INFOPLIST_FILE = "$(SRCROOT)/GasMoney/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -544,7 +548,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 35AF4SXRC7;
+				DEVELOPMENT_TEAM = PPT8LS6UXM;
 				INFOPLIST_FILE = "$(SRCROOT)/GasMoney/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

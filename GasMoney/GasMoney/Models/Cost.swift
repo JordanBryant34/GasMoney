@@ -8,13 +8,27 @@
 import Foundation
 
 class Cost {
+    
     var title: String
-    var ammount: Double
+    var amount: Double
     var description: String?
     
-    init(title: String, ammount: Double, description: String? = nil){
+    init(title: String, amount: Double, description: String? = nil){
         self.title = title
-        self.ammount = ammount
+        self.amount = amount
         self.description = description
     }
+    
+}
+
+extension Cost {
+    
+    convenience init?(dictionary: [String: Any]) {
+        guard let title = dictionary["title"] as? String else { return nil }
+        guard let amount = dictionary["amount"] as? Double else { return nil }
+        let description = dictionary["description"] as? String
+        
+        self.init(title: title, amount: amount, description: description)
+    }
+    
 }

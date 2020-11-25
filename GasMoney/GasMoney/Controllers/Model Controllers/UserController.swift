@@ -7,8 +7,11 @@
 
 import Foundation
 import FirebaseAuth
+import FirebaseDatabase
 
 class UserController {
+    
+    static let ref = Database.database().reference()
     
     static func loginUser(email: String, password: String, completion: @escaping (Result<Bool, AuthError>) -> Void) {
         Auth.auth().signIn(withEmail: email, password: password) { (_, error) in
@@ -46,6 +49,15 @@ class UserController {
             try Auth.auth().signOut()
         } catch {
             print(error)
+        }
+    }
+    
+    static func fetchUser(username: String, completion: @escaping (User?) -> Void) {
+        ref.child("users").child(username).observeSingleEvent(of: .value) { (snapshot) in
+            guard let dictionary = snapshot.value as? [String : Any] else { return completion(nil) }
+            
+            let user = User(dictionary: dictionary)
+            completion(user)
         }
     }
      
