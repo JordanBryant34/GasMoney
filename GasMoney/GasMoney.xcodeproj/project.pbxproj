@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5A00F7232565F157007D9F1D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A00F7222565F157007D9F1D /* GoogleService-Info.plist */; };
-		5A49B8F8256873CF009BD00B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A49B8F7256873CF009BD00B /* ProfileViewController.swift */; };
 		5A75B636256324DE003BBA5D /* TripsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75B635256324DE003BBA5D /* TripsListViewController.swift */; };
 		5A75B63A2563264E003BBA5D /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75B6392563264E003BBA5D /* UIColorExtension.swift */; };
 		5A75B63F25632CC5003BBA5D /* TripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75B63E25632CC5003BBA5D /* TripCell.swift */; };
@@ -29,6 +28,7 @@
 		7A2D0A0E25658C2700C6C77C /* GasMoneyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2D0A0D25658C2700C6C77C /* GasMoneyTextField.swift */; };
 		7A2D0A1125658CFF00C6C77C /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2D0A1025658CFF00C6C77C /* UIImageExtension.swift */; };
 		7A2D0A7E256C52FE00C6C77C /* NoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2D0A7D256C52FE00C6C77C /* NoDataView.swift */; };
+		7A2D0A87256EC47700C6C77C /* CreateTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2D0A86256EC47700C6C77C /* CreateTripViewController.swift */; };
 		7A2E7E2C255C5AD70095EC1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2E7E2B255C5AD70095EC1A /* AppDelegate.swift */; };
 		7A2E7E2E255C5AD70095EC1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2E7E2D255C5AD70095EC1A /* SceneDelegate.swift */; };
 		7A2E7E35255C5ADC0095EC1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E7E34255C5ADC0095EC1A /* Assets.xcassets */; };
@@ -38,7 +38,6 @@
 
 /* Begin PBXFileReference section */
 		5A00F7222565F157007D9F1D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		5A49B8F7256873CF009BD00B /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		5A75B635256324DE003BBA5D /* TripsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsListViewController.swift; sourceTree = "<group>"; };
 		5A75B6392563264E003BBA5D /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		5A75B63E25632CC5003BBA5D /* TripCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCell.swift; sourceTree = "<group>"; };
@@ -61,6 +60,7 @@
 		7A2D0A0D25658C2700C6C77C /* GasMoneyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasMoneyTextField.swift; sourceTree = "<group>"; };
 		7A2D0A1025658CFF00C6C77C /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		7A2D0A7D256C52FE00C6C77C /* NoDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDataView.swift; sourceTree = "<group>"; };
+		7A2D0A86256EC47700C6C77C /* CreateTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTripViewController.swift; sourceTree = "<group>"; };
 		7A2E7E28255C5AD70095EC1A /* GasMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GasMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A2E7E2B255C5AD70095EC1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A2E7E2D255C5AD70095EC1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -165,7 +165,7 @@
 		7A2D09F7256585D600C6C77C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				5A49B8F7256873CF009BD00B /* ProfileViewController.swift */,
+				7A2D0A86256EC47700C6C77C /* CreateTripViewController.swift */,
 				5A75B635256324DE003BBA5D /* TripsListViewController.swift */,
 				7A2D09F82565860D00C6C77C /* Login and Sign Up */,
 			);
@@ -376,11 +376,11 @@
 				5ADBE85F256481B000EE0A18 /* AuthError.swift in Sources */,
 				5ADBE84625645B7400EE0A18 /* UserController.swift in Sources */,
 				5ADBE853256461AC00EE0A18 /* User.swift in Sources */,
+				7A2D0A87256EC47700C6C77C /* CreateTripViewController.swift in Sources */,
 				5ADBE84925645BA500EE0A18 /* TripController.swift in Sources */,
 				5ADBE8502564617F00EE0A18 /* Trip.swift in Sources */,
 				7A2D0A7E256C52FE00C6C77C /* NoDataView.swift in Sources */,
 				7A2D0A0625658A8200C6C77C /* Helpers.swift in Sources */,
-				5A49B8F8256873CF009BD00B /* ProfileViewController.swift in Sources */,
 				5A75B63F25632CC5003BBA5D /* TripCell.swift in Sources */,
 				5A75B6532565DD45003BBA5D /* ProfileTableViewHeader.swift in Sources */,
 				7A2D0A002565886700C6C77C /* UIViewControllerExtension.swift in Sources */,
