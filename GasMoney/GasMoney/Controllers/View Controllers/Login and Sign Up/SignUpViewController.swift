@@ -1,13 +1,13 @@
 //
-//  LoginViewController.swift
+//  SignUpViewController.swift
 //  GasMoney
 //
-//  Created by Jordan Bryant on 11/18/20.
+//  Created by Owen Gaudio on 11/30/20.
 //
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class SignUpViewController: UIViewController {
     
     let backgroundImageView: UIImageView = {
         let imageView = UIImageView()
@@ -29,22 +29,23 @@ class LoginViewController: UIViewController {
         let label = UILabel()
         label.textAlignment = .center
         label.font = .boldSystemFont(ofSize: 27.5)
-        label.text = "Welcome to Gas Money"
+        label.text = "Create Account"
         label.textColor = .gasGreen()
         label.sizeToFit()
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
-    let detailLabel: UILabel = {
-        let label = UILabel()
-        label.textAlignment = .center
-        label.font = .boldSystemFont(ofSize: 17)
-        label.text = "Log in or sign up to continue."
-        label.textColor = .gasGray()
-        label.sizeToFit()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
+    let usernameTextField: GasMoneyTextField = {
+        let textField = GasMoneyTextField()
+        textField.attributedPlaceholder = NSAttributedString(string: "Username", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 17)])
+        textField.backgroundColor = .subLabelGray()
+        textField.layer.borderColor = UIColor.gasGray().cgColor
+        textField.autocorrectionType = .no
+        textField.returnKeyType = .next
+        textField.clearButtonMode = .whileEditing
+        textField.tag = 0
+        return textField
     }()
     
     let emailTextField: GasMoneyTextField = {
@@ -56,7 +57,7 @@ class LoginViewController: UIViewController {
         textField.layer.borderColor = UIColor.gasGray().cgColor
         textField.returnKeyType = .next
         textField.clearButtonMode = .whileEditing
-        textField.tag = 0
+        textField.tag = 1
         return textField
     }()
     
@@ -69,28 +70,17 @@ class LoginViewController: UIViewController {
         textField.isSecureTextEntry = true
         textField.returnKeyType = .done
         textField.clearButtonMode = .whileEditing
-        textField.tag = 1
+        textField.tag = 2
         return textField
     }()
     
-    let signUpButton: RoundedButton = {
-        let button = RoundedButton()
-        button.setTitle("Create New Account", for: .normal)
-        button.setTitleColor(.gasGreen(), for: .normal)
-        button.titleLabel?.font = .systemFont(ofSize: 20)
-        button.backgroundColor = .clear
-        button.layer.borderWidth = 1
-        button.layer.borderColor = UIColor.gasGreen().cgColor
-        return button
-    }()
-    
-    let loginButton: RoundedButton = {
+    let createAccountButton: RoundedButton = {
         let button = RoundedButton()
         button.setBackgroundImage(UIImage(color: .gasGray()), for: .disabled)
         button.setBackgroundImage(UIImage(color: UIColor.gasGreen()), for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.setTitleColor(.subLabelGray(), for: .disabled)
-        button.setTitle("Log In", for: .normal)
+        button.setTitle("Create Account", for: .normal)
         button.titleLabel?.font = .systemFont(ofSize: 20)
         return button
     }()
@@ -109,13 +99,13 @@ class LoginViewController: UIViewController {
     }
     
     private func setDelegatesAndActions() {
+        usernameTextField.delegate = self
         emailTextField.delegate = self
         passwordTextField.delegate = self
         
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard)))
         
-        signUpButton.addTarget(self, action: #selector(createNewAccountButtonTapped), for: .touchUpInside)
-        loginButton.addTarget(self, action: #selector(logInUser), for: .touchUpInside)
+        createAccountButton.addTarget(self, action: #selector(createNewAccountButtonTapped), for: .touchUpInside)
     }
     
     private func setupViews() {
@@ -124,11 +114,10 @@ class LoginViewController: UIViewController {
         view.addSubview(backgroundImageView)
         view.addSubview(logoImageView)
         view.addSubview(welcomeLabel)
-        view.addSubview(detailLabel)
+        view.addSubview(usernameTextField)
         view.addSubview(emailTextField)
         view.addSubview(passwordTextField)
-        view.addSubview(signUpButton)
-        view.addSubview(loginButton)
+        view.addSubview(createAccountButton)
         
         backgroundImageView.pinEdgesToView(view: view)
         
@@ -140,35 +129,25 @@ class LoginViewController: UIViewController {
         welcomeLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         welcomeLabel.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 20).isActive = true
         
-        detailLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        detailLabel.topAnchor.constraint(equalTo: welcomeLabel.bottomAnchor, constant: 10).isActive = true
+        usernameTextField.bottomAnchor.constraint(equalTo: emailTextField.topAnchor, constant: -7.5).isActive = true
+        usernameTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        usernameTextField.setHeightAndWidthConstants(height: 50, width: view.frame.width * 0.8)
         
-        emailTextField.bottomAnchor.constraint(equalTo: view.centerYAnchor, constant: -7.5).isActive = true
-        emailTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        emailTextField.centerInView(view: view)
         emailTextField.setHeightAndWidthConstants(height: 50, width: view.frame.width * 0.8)
         
-        passwordTextField.topAnchor.constraint(equalTo: view.centerYAnchor, constant: 7.5).isActive = true
+        passwordTextField.topAnchor.constraint(equalTo: emailTextField.bottomAnchor, constant: 7.5).isActive = true
         passwordTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         passwordTextField.setHeightAndWidthConstants(height: 50, width: view.frame.width * 0.8)
         
-        signUpButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -30).isActive = true
-        signUpButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        signUpButton.setHeightAndWidthConstants(height: 70, width: view.frame.width * 0.8)
+        createAccountButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -30).isActive = true
+        createAccountButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        createAccountButton.setHeightAndWidthConstants(height: 70, width: view.frame.width * 0.8)
         
-        loginButton.bottomAnchor.constraint(equalTo: signUpButton.topAnchor, constant: -20).isActive = true
-        loginButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        loginButton.setHeightAndWidthConstants(height: 70, width: view.frame.width * 0.8)
-    }
-    
-    @objc private func logInUser() {
-        guard let email = emailTextField.text, !email.isEmpty else { return }
-        guard let password = passwordTextField.text, !password.isEmpty else { return }
-        
-        loginButton.isEnabled = false
     }
     
     @objc private func createNewAccountButtonTapped() {
-        navigationController?.pushViewController(SignUpViewController(), animated: true)
+        print("account created jk")
     }
     
     @objc private func dismissKeyboard() {
@@ -180,7 +159,7 @@ class LoginViewController: UIViewController {
     }
 }
 
-extension LoginViewController: UITextFieldDelegate {
+extension SignUpViewController: UITextFieldDelegate {
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         textField.layer.borderColor = UIColor.gasGreen().cgColor

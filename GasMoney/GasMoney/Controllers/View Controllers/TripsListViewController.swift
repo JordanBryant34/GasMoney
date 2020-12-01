@@ -57,9 +57,6 @@ class TripsListViewController: UIViewController {
         title = "Your Trips"
         view.backgroundColor = .offWhite()
         
-        profileNavigationItem()
-        addNavigationItem()
-        
         view.addSubview(noDataView)
         view.addSubview(collectionView)
         view.addSubview(activityIndicator)
@@ -77,23 +74,6 @@ class TripsListViewController: UIViewController {
             self?.trips = trips
             self?.reloadData()
         }
-    }
-    
-    private func profileNavigationItem() {
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Profile", style: .plain, target: self, action: #selector(profileButtonTapped))
-    }
-    
-    @objc func profileButtonTapped() {
-        print(123)
-        navigationController?.pushViewController(ProfileViewController(), animated: true)
-    }
-    
-    private func addNavigationItem() {
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonTapped))
-    }
-    
-    @objc func addButtonTapped() {
-        print("works")
     }
     
     private func reloadData() {

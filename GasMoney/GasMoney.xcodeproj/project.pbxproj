@@ -13,6 +13,10 @@
 		5A75B63F25632CC5003BBA5D /* TripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75B63E25632CC5003BBA5D /* TripCell.swift */; };
 		5A75B64F2565C391003BBA5D /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75B64E2565C391003BBA5D /* ProfileCell.swift */; };
 		5A75B6532565DD45003BBA5D /* ProfileTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75B6522565DD45003BBA5D /* ProfileTableViewHeader.swift */; };
+		5AA29CC3257560F20002F0C5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA29CC2257560F20002F0C5 /* SignUpViewController.swift */; };
+		5AA29CDA257568A10002F0C5 /* InvitationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA29CD9257568A10002F0C5 /* InvitationsViewController.swift */; };
+		5AA29CDE25756A290002F0C5 /* InvitationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA29CDD25756A290002F0C5 /* InvitationCell.swift */; };
+		5AA29CE125756A770002F0C5 /* Invitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA29CE025756A770002F0C5 /* Invitation.swift */; };
 		5ADBE84625645B7400EE0A18 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADBE84525645B7400EE0A18 /* UserController.swift */; };
 		5ADBE84925645BA500EE0A18 /* TripController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADBE84825645BA500EE0A18 /* TripController.swift */; };
 		5ADBE84C25645BBD00EE0A18 /* CostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADBE84B25645BBD00EE0A18 /* CostController.swift */; };
@@ -44,6 +48,10 @@
 		5A75B64B25659FD5003BBA5D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		5A75B64E2565C391003BBA5D /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		5A75B6522565DD45003BBA5D /* ProfileTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewHeader.swift; sourceTree = "<group>"; };
+		5AA29CC2257560F20002F0C5 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		5AA29CD9257568A10002F0C5 /* InvitationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationsViewController.swift; sourceTree = "<group>"; };
+		5AA29CDD25756A290002F0C5 /* InvitationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationCell.swift; sourceTree = "<group>"; };
+		5AA29CE025756A770002F0C5 /* Invitation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invitation.swift; sourceTree = "<group>"; };
 		5ADBE84525645B7400EE0A18 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
 		5ADBE84825645BA500EE0A18 /* TripController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripController.swift; sourceTree = "<group>"; };
 		5ADBE84B25645BBD00EE0A18 /* CostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostController.swift; sourceTree = "<group>"; };
@@ -119,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				5A75B63E25632CC5003BBA5D /* TripCell.swift */,
+				5AA29CDD25756A290002F0C5 /* InvitationCell.swift */,
 			);
 			path = "Collection View Cell";
 			sourceTree = "<group>";
@@ -158,6 +167,7 @@
 				5ADBE852256461AC00EE0A18 /* User.swift */,
 				5ADBE84F2564617F00EE0A18 /* Trip.swift */,
 				5ADBE85E256481B000EE0A18 /* AuthError.swift */,
+				5AA29CE025756A770002F0C5 /* Invitation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -167,6 +177,7 @@
 			children = (
 				7A2D0A86256EC47700C6C77C /* CreateTripViewController.swift */,
 				5A75B635256324DE003BBA5D /* TripsListViewController.swift */,
+				5AA29CD9257568A10002F0C5 /* InvitationsViewController.swift */,
 				7A2D09F82565860D00C6C77C /* Login and Sign Up */,
 			);
 			path = "View Controllers";
@@ -176,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				7A2D09F92565863C00C6C77C /* LoginViewController.swift */,
+				5AA29CC2257560F20002F0C5 /* SignUpViewController.swift */,
 			);
 			path = "Login and Sign Up";
 			sourceTree = "<group>";
@@ -381,11 +393,15 @@
 				5ADBE8502564617F00EE0A18 /* Trip.swift in Sources */,
 				7A2D0A7E256C52FE00C6C77C /* NoDataView.swift in Sources */,
 				7A2D0A0625658A8200C6C77C /* Helpers.swift in Sources */,
+				5AA29CDE25756A290002F0C5 /* InvitationCell.swift in Sources */,
+				5AA29CE125756A770002F0C5 /* Invitation.swift in Sources */,
 				5A75B63F25632CC5003BBA5D /* TripCell.swift in Sources */,
 				5A75B6532565DD45003BBA5D /* ProfileTableViewHeader.swift in Sources */,
+				5AA29CC3257560F20002F0C5 /* SignUpViewController.swift in Sources */,
 				7A2D0A002565886700C6C77C /* UIViewControllerExtension.swift in Sources */,
 				7A2D0A03256588A400C6C77C /* UIViewExtension.swift in Sources */,
 				7A2D0A0E25658C2700C6C77C /* GasMoneyTextField.swift in Sources */,
+				5AA29CDA257568A10002F0C5 /* InvitationsViewController.swift in Sources */,
 				7A2E7E2E255C5AD70095EC1A /* SceneDelegate.swift in Sources */,
 				7A2D0A1125658CFF00C6C77C /* UIImageExtension.swift in Sources */,
 			);
