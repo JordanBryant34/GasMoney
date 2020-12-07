@@ -49,13 +49,26 @@ class TripsListViewController: UIViewController {
         
         collectionView.register(TripCell.self, forCellWithReuseIdentifier: cellID)
         
-        fetchTrips()
+        noDataView.button.addTarget(self, action: #selector(createTripTapped), for: .touchUpInside)
+        
         setupViews()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        fetchTrips()
     }
     
     private func setupViews() {
         title = "Your Trips"
         view.backgroundColor = .offWhite()
+        removeNavigationBarBackButton()
+        
+        navigationController?.navigationBar.setBackgroundImage(UIImage(color: .gasGreen()), for: .default)
+        navigationController?.navigationBar.isTranslucent = false
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "New Trip", style: .plain, target: self, action: #selector(createTripTapped))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Invitations", style: .plain, target: self, action: #selector(invitationsTapped))
         
         view.addSubview(noDataView)
         view.addSubview(collectionView)
@@ -76,6 +89,23 @@ class TripsListViewController: UIViewController {
         }
     }
     
+    @objc private func createTripTapped() {
+        navigationController?.pushViewController(CreateTripViewController(), animated: true)
+    }
+    
+    @objc private func invitationsTapped() {
+        navigationController?.pushViewController(InvitationsViewController(), animated: true)
+    }
+    
+    @objc private func handleViewButtonTapped(sender: UIButton) {
+        let viewTripVC = ViewTripViewController()
+        let trip = trips[sender.tag]
+        
+        viewTripVC.trip = trip
+        
+        navigationController?.pushViewController(viewTripVC, animated: true)
+    }
+    
     private func reloadData() {
         DispatchQueue.main.async {
             self.collectionView.reloadData()
@@ -94,7 +124,12 @@ extension TripsListViewController: UICollectionViewDataSource, UICollectionViewD
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as! TripCell
+        
         cell.trip = trips[indexPath.item]
+        
+        cell.viewButton.addTarget(self, action: #selector(handleViewButtonTapped), for: .touchUpInside)
+        cell.viewButton.tag = indexPath.item
+        
         return cell
     }
     

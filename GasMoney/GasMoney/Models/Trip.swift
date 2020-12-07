@@ -60,4 +60,22 @@ extension Trip {
         self.init(name: name, id: id, destination: destination, origin: origin, participants: participantsArray, description: description, costs: costsArray)
     }
     
+    func dictionary() -> [String : Any] {
+        var dictionary: [String : Any] = [:]
+        
+        dictionary["name"] = name
+        dictionary["destination"] = destination
+        dictionary["origin"] = origin
+        dictionary["id"] = id
+        dictionary["description"] = description
+        
+        var participantsDictionary: [String : Int] = [:]
+        for participant in participants {
+            participantsDictionary[participant] = 1
+        }
+        
+        dictionary["participants"] = participantsDictionary
+        
+        return dictionary
+    }
 }

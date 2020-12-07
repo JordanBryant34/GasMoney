@@ -7,13 +7,14 @@
 
 import Foundation
 import FirebaseDatabase
+import FirebaseAuth
 
 class TripController {
     
     static let ref = Database.database().reference()
     
     static func fetchUsersTrips(completion: @escaping ([Trip]) -> Void) {
-        let currentUser = "testUser"
+        guard let currentUser = Auth.auth().currentUser?.displayName else { completion([]); return}
         var trips: [Trip] = []
         
         ref.child("users").child(currentUser).child("trips").observeSingleEvent(of: .value) { (snapshot) in
@@ -46,6 +47,18 @@ class TripController {
             
             completion(Trip(dictionary: tripDictionary))
         }
+    }
+    
+    static func createNewTrip(trip: Trip) {
+        guard let currentUser = Auth.auth().currentUser?.displayName else { return }
+    
+        trip.participants.append(currentUser)
+        
+        for participant in trip.participants {
+            ref.child("users").child(participant).child("trips").updateChildValues([trip.id : 1])
+        }
+        
+        ref.child("trips").child(trip.id).updateChildValues(trip.dictionary())
     }
     
 }

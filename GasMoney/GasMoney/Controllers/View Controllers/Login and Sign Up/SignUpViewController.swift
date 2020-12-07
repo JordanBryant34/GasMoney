@@ -82,6 +82,7 @@ class SignUpViewController: UIViewController {
         button.setTitleColor(.subLabelGray(), for: .disabled)
         button.setTitle("Create Account", for: .normal)
         button.titleLabel?.font = .systemFont(ofSize: 20)
+        button.isEnabled = false
         return button
     }()
     
@@ -143,11 +144,35 @@ class SignUpViewController: UIViewController {
         createAccountButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -30).isActive = true
         createAccountButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         createAccountButton.setHeightAndWidthConstants(height: 70, width: view.frame.width * 0.8)
-        
+    }
+    
+    private func checkIfReadyToContinue() {
+        createAccountButton.isEnabled = false
+        if let email = emailTextField.text, let password = passwordTextField.text, let username = usernameTextField.text {
+            if !email.isEmpty && !password.isEmpty && !username.isEmpty {
+                createAccountButton.isEnabled = true
+            }
+        }
     }
     
     @objc private func createNewAccountButtonTapped() {
-        print("account created jk")
+        guard let username = usernameTextField.text, !username.isEmpty else { return }
+        guard let email = emailTextField.text, !email.isEmpty else { return }
+        guard let password = passwordTextField.text, !password.isEmpty else { return }
+        
+        createAccountButton.isEnabled = false
+        
+        UserController.createNewUser(username: username, email: email, password: password) { [weak self] (result) in
+            switch result {
+            case .success(_):
+                self?.navigationController?.pushViewController(TripsListViewController(), animated: true)
+            case .failure(let error):
+                print(error.localizedDescription)
+                print(error)
+            }
+            
+            self?.checkIfReadyToContinue()
+        }
     }
     
     @objc private func dismissKeyboard() {
@@ -163,10 +188,12 @@ extension SignUpViewController: UITextFieldDelegate {
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         textField.layer.borderColor = UIColor.gasGreen().cgColor
+        checkIfReadyToContinue()
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         textField.layer.borderColor = UIColor.subLabelGray().cgColor
+        checkIfReadyToContinue()
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -175,6 +202,8 @@ extension SignUpViewController: UITextFieldDelegate {
         } else {
            textField.resignFirstResponder()
         }
+        
+        checkIfReadyToContinue()
         
         return false
     }

@@ -33,3 +33,11 @@ extension User {
     }
     
 }
+
+extension User: Equatable {
+    
+    static func == (lhs: User, rhs: User) -> Bool {
+        return lhs.username == rhs.username
+    }
+    
+}

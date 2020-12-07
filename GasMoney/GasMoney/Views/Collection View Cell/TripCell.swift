@@ -12,6 +12,7 @@ class TripCell: UICollectionViewCell {
     let mapImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "TestMapImage")
+        imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
