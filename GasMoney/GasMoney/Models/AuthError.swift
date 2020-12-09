@@ -11,6 +11,7 @@ enum AuthError: LocalizedError {
     case thrownError(Error)
     case invalidPasswordLength
     case passwordsDontMatch
+    case invalidUsername
     
     var errorDescription: String? {
         switch self {
@@ -18,6 +19,8 @@ enum AuthError: LocalizedError {
             return "Password must be between 8 and 30 characters."
         case .passwordsDontMatch:
             return "Passwords do not match."
+        case .invalidUsername:
+            return "Username is either taken or an invalid length"
         case .thrownError(let error):
             return error.localizedDescription
         }

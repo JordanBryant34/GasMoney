@@ -37,6 +37,9 @@
 		7A2E7E2E255C5AD70095EC1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2E7E2D255C5AD70095EC1A /* SceneDelegate.swift */; };
 		7A2E7E35255C5ADC0095EC1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E7E34255C5ADC0095EC1A /* Assets.xcassets */; };
 		7A2E7E38255C5ADC0095EC1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E7E36255C5ADC0095EC1A /* LaunchScreen.storyboard */; };
+		7ADCA5B82576C674000107B8 /* AddParticipantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADCA5B72576C674000107B8 /* AddParticipantViewController.swift */; };
+		7ADCA5BC25794C9B000107B8 /* ViewTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADCA5BB25794C9B000107B8 /* ViewTripViewController.swift */; };
+		7ADCA5C025795C42000107B8 /* CostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADCA5BF25795C42000107B8 /* CostTableViewCell.swift */; };
 		CC08ED3E14C533072A32DE22 /* Pods_GasMoney.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82B93B6AFFACA9C992B253CF /* Pods_GasMoney.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +78,9 @@
 		7A2E7E34255C5ADC0095EC1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A2E7E37255C5ADC0095EC1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A2E7E39255C5ADC0095EC1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ADCA5B72576C674000107B8 /* AddParticipantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddParticipantViewController.swift; sourceTree = "<group>"; };
+		7ADCA5BB25794C9B000107B8 /* ViewTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTripViewController.swift; sourceTree = "<group>"; };
+		7ADCA5BF25795C42000107B8 /* CostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostTableViewCell.swift; sourceTree = "<group>"; };
 		82B93B6AFFACA9C992B253CF /* Pods_GasMoney.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GasMoney.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F5309EE5328BB95F00A2204 /* Pods-GasMoney.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GasMoney.release.xcconfig"; path = "Target Support Files/Pods-GasMoney/Pods-GasMoney.release.xcconfig"; sourceTree = "<group>"; };
 		E7E3D556E88586B497FC5198 /* Pods-GasMoney.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GasMoney.debug.xcconfig"; path = "Target Support Files/Pods-GasMoney/Pods-GasMoney.debug.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +143,7 @@
 			children = (
 				5A75B64E2565C391003BBA5D /* ProfileCell.swift */,
 				5A75B6522565DD45003BBA5D /* ProfileTableViewHeader.swift */,
+				7ADCA5BF25795C42000107B8 /* CostTableViewCell.swift */,
 			);
 			path = "Table View Cell";
 			sourceTree = "<group>";
@@ -175,10 +182,12 @@
 		7A2D09F7256585D600C6C77C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7ADCA5B72576C674000107B8 /* AddParticipantViewController.swift */,
 				7A2D0A86256EC47700C6C77C /* CreateTripViewController.swift */,
 				5A75B635256324DE003BBA5D /* TripsListViewController.swift */,
 				5AA29CD9257568A10002F0C5 /* InvitationsViewController.swift */,
 				7A2D09F82565860D00C6C77C /* Login and Sign Up */,
+				7ADCA5BB25794C9B000107B8 /* ViewTripViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -388,11 +397,14 @@
 				5ADBE85F256481B000EE0A18 /* AuthError.swift in Sources */,
 				5ADBE84625645B7400EE0A18 /* UserController.swift in Sources */,
 				5ADBE853256461AC00EE0A18 /* User.swift in Sources */,
+				7ADCA5BC25794C9B000107B8 /* ViewTripViewController.swift in Sources */,
 				7A2D0A87256EC47700C6C77C /* CreateTripViewController.swift in Sources */,
+				7ADCA5B82576C674000107B8 /* AddParticipantViewController.swift in Sources */,
 				5ADBE84925645BA500EE0A18 /* TripController.swift in Sources */,
 				5ADBE8502564617F00EE0A18 /* Trip.swift in Sources */,
 				7A2D0A7E256C52FE00C6C77C /* NoDataView.swift in Sources */,
 				7A2D0A0625658A8200C6C77C /* Helpers.swift in Sources */,
+				7ADCA5C025795C42000107B8 /* CostTableViewCell.swift in Sources */,
 				5AA29CDE25756A290002F0C5 /* InvitationCell.swift in Sources */,
 				5AA29CE125756A770002F0C5 /* Invitation.swift in Sources */,
 				5A75B63F25632CC5003BBA5D /* TripCell.swift in Sources */,

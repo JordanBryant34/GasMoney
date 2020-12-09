@@ -165,6 +165,17 @@ class LoginViewController: UIViewController {
         guard let password = passwordTextField.text, !password.isEmpty else { return }
         
         loginButton.isEnabled = false
+        
+        UserController.loginUser(email: email, password: password) { [weak self] (result) in
+            switch result {
+            case .success(_):
+                self?.navigationController?.pushViewController(TripsListViewController(), animated: true)
+            case .failure(let error):
+                print(error)
+            }
+            
+            self?.loginButton.isEnabled = true
+        }
     }
     
     @objc private func createNewAccountButtonTapped() {
