@@ -21,8 +21,4 @@ extension UIColor {
         return UIColor(red: 174/255, green: 177/255, blue: 173/255, alpha: 1)
     }
     
-    static func gasGray() -> UIColor {
-        return UIColor(red: 132/255, green: 132/255, blue: 140/255, alpha: 1)
-    }
-    
 }
