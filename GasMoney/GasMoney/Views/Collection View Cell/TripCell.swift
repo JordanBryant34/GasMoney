@@ -9,10 +9,10 @@ import UIKit
 
 class TripCell: UICollectionViewCell {
     
+    //MARK: - Cell setup
     let mapImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "TestMapImage")
-        imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
@@ -29,6 +29,7 @@ class TripCell: UICollectionViewCell {
     
     let titleLabel: UILabel = {
         let titleLabel = UILabel()
+        titleLabel.text = "Title Name"
         titleLabel.textColor = .white
         titleLabel.font = UIFont.boldSystemFont(ofSize: 20)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -37,6 +38,7 @@ class TripCell: UICollectionViewCell {
     
     let participantsLabel: UILabel = {
         let participantsLabel = UILabel()
+        participantsLabel.text = "5 participants"
         participantsLabel.sizeToFit()
         participantsLabel.textColor = .subLabelGray()
         participantsLabel.font = UIFont.boldSystemFont(ofSize: 15)
@@ -44,7 +46,7 @@ class TripCell: UICollectionViewCell {
         return participantsLabel
     }()
     
-    private let destinationTitleLabel: UILabel = {
+    let destinationTitleLabel: UILabel = {
         let destinationLabel = UILabel()
         destinationLabel.text = "Destination"
         destinationLabel.textColor = .gasGreen()
@@ -53,15 +55,19 @@ class TripCell: UICollectionViewCell {
         return destinationLabel
     }()
     
+    //MARK: - Locations
     let destinationLabel: UILabel = {
         let destinationLabel = UILabel()
+        destinationLabel.text = "fsdkfdgfdgdsgsdgsdfsdfdsggfdfgdfgfdsdfsfdfgdsgffdgsfdgsdfgdsgfdsgsgsgsgsdg"
         destinationLabel.textColor = .subLabelGray()
         destinationLabel.font = UIFont.boldSystemFont(ofSize: 13)
         destinationLabel.translatesAutoresizingMaskIntoConstraints = false
         return destinationLabel
     }()
     
-    private let costTitleLabel: UILabel = {
+    
+    //MARK: - Cost
+    let costTitleLabel: UILabel = {
         let costTitleLabel = UILabel()
         costTitleLabel.text = "Cost"
         costTitleLabel.textColor = .gasGreen()
@@ -72,24 +78,26 @@ class TripCell: UICollectionViewCell {
     
     let costLabel: UILabel = {
         let costLabel = UILabel()
+        costLabel.text = "$" + "100.00"
         costLabel.textColor = .subLabelGray()
         costLabel.font = UIFont.boldSystemFont(ofSize: 13)
         costLabel.translatesAutoresizingMaskIntoConstraints = false
         return costLabel
     }()
     
+    //MARK: - View Button
     let viewButton: UIButton = {
         let viewButton = UIButton()
         viewButton.setTitle("View", for: .normal)
         viewButton.setTitleColor(.gasGreen(), for: .normal)
+        viewButton.addTarget(self, action: #selector(viewButtonTapped), for: .touchUpInside)
         viewButton.translatesAutoresizingMaskIntoConstraints = false
+        
         return viewButton
     }()
     
-    var trip: Trip? {
-        didSet {
-            setData()
-        }
+    @objc func viewButtonTapped(sender: UIButton!) {
+        print("Something")
     }
     
     override func layoutSubviews() {
@@ -150,21 +158,9 @@ class TripCell: UICollectionViewCell {
         viewButton.rightAnchor.constraint(equalTo: detailView.rightAnchor, constant: -15).isActive = true
         viewButton.heightAnchor.constraint(equalTo: detailView.heightAnchor, multiplier: 0.5).isActive = true
         viewButton.widthAnchor.constraint(equalToConstant: 80).isActive = true
-    }
-    
-    private func setData() {
-        guard let trip = trip else { return }
         
-        titleLabel.text = trip.name
-        participantsLabel.text = "\(trip.participants.count) participants"
-        destinationLabel.text = trip.destination
+        //commit
         
-        let formatter = NumberFormatter()
-        formatter.locale = Locale.current
-        formatter.numberStyle = .currency
-        if let formattedTotalCost = formatter.string(from: trip.totalCost as NSNumber) {
-            costLabel.text = "\(formattedTotalCost)"
-        }
     }
     
     private func createShadow() {
@@ -176,6 +172,6 @@ class TripCell: UICollectionViewCell {
         layer.shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: layer.cornerRadius).cgPath
         backgroundColor = .white
         layer.cornerRadius = 10
+        
     }
-    
 }
