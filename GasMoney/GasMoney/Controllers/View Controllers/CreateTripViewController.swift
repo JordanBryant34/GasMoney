@@ -176,7 +176,9 @@ class CreateTripViewController: UIViewController {
         let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
         let id = String((0..<25).map{ _ in letters.randomElement()! })
         
-        let trip = Trip(name: name, id: id, destination: destination, origin: origin, participants: participants, description: nil, costs: [])
+        let trip = Trip(name: name, id: id, destination: destination, origin: origin, participants: [], description: nil, costs: [])
+        
+        InvitationController.addParticipants(trip: trip, participants: participants)
         
         TripController.createNewTrip(trip: trip)
         navigationController?.popViewController(animated: true)

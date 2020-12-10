@@ -25,11 +25,23 @@ class InvitationsViewController: UIViewController {
     
     var invitations: [Invitation] = []
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         collectionView.register(InvitationCell.self, forCellWithReuseIdentifier: cellID)
         setupViews()
+        
+        InvitationController.fetchInvitations { [weak self] (invitations) in
+            self?.invitations = invitations
+            self?.reloadData()
+        }
+    }
+    
+    func reloadData () {
+        DispatchQueue.main.async {
+            self.collectionView.reloadData()
+        }
     }
     
     private func setupViews() {
@@ -38,17 +50,32 @@ class InvitationsViewController: UIViewController {
         
         view.addSubview(collectionView)
         collectionView.pinEdgesToView(view: view)
+ 
     }
+    
+    @objc private func acceptButtonTapped(sender: UIButton) {
+        let invitation = invitations[sender.tag]
+        InvitationController.acceptInvitation(invitation: invitation)
+    }
+    
+    @objc private func declineButtonTapped(sender: UIButton) {
+        let invitation = invitations[sender.tag]
+        InvitationController.removeInvitation(invitation: invitation)
+    }
+
 }
 
 extension InvitationsViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return invitations.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as! InvitationCell
+
+        cell.acceptButton.tag = indexPath.item
+        cell.declineButton.tag = indexPath.item
         return cell
     }
     

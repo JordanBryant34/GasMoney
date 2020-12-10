@@ -13,6 +13,7 @@
 		5A75B63F25632CC5003BBA5D /* TripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75B63E25632CC5003BBA5D /* TripCell.swift */; };
 		5A75B64F2565C391003BBA5D /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75B64E2565C391003BBA5D /* ProfileCell.swift */; };
 		5A75B6532565DD45003BBA5D /* ProfileTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75B6522565DD45003BBA5D /* ProfileTableViewHeader.swift */; };
+		5A86D8AF25814C4F000B6DBC /* InvitationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A86D8AE25814C4F000B6DBC /* InvitationController.swift */; };
 		5AA29CC3257560F20002F0C5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA29CC2257560F20002F0C5 /* SignUpViewController.swift */; };
 		5AA29CDA257568A10002F0C5 /* InvitationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA29CD9257568A10002F0C5 /* InvitationsViewController.swift */; };
 		5AA29CDE25756A290002F0C5 /* InvitationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA29CDD25756A290002F0C5 /* InvitationCell.swift */; };
@@ -51,6 +52,7 @@
 		5A75B64B25659FD5003BBA5D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		5A75B64E2565C391003BBA5D /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		5A75B6522565DD45003BBA5D /* ProfileTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewHeader.swift; sourceTree = "<group>"; };
+		5A86D8AE25814C4F000B6DBC /* InvitationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationController.swift; sourceTree = "<group>"; };
 		5AA29CC2257560F20002F0C5 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		5AA29CD9257568A10002F0C5 /* InvitationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationsViewController.swift; sourceTree = "<group>"; };
 		5AA29CDD25756A290002F0C5 /* InvitationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationCell.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				5ADBE84525645B7400EE0A18 /* UserController.swift */,
 				5ADBE84B25645BBD00EE0A18 /* CostController.swift */,
 				5ADBE84825645BA500EE0A18 /* TripController.swift */,
+				5A86D8AE25814C4F000B6DBC /* InvitationController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -186,8 +189,8 @@
 				7A2D0A86256EC47700C6C77C /* CreateTripViewController.swift */,
 				5A75B635256324DE003BBA5D /* TripsListViewController.swift */,
 				5AA29CD9257568A10002F0C5 /* InvitationsViewController.swift */,
-				7A2D09F82565860D00C6C77C /* Login and Sign Up */,
 				7ADCA5BB25794C9B000107B8 /* ViewTripViewController.swift */,
+				7A2D09F82565860D00C6C77C /* Login and Sign Up */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -405,6 +408,7 @@
 				7A2D0A7E256C52FE00C6C77C /* NoDataView.swift in Sources */,
 				7A2D0A0625658A8200C6C77C /* Helpers.swift in Sources */,
 				7ADCA5C025795C42000107B8 /* CostTableViewCell.swift in Sources */,
+				5A86D8AF25814C4F000B6DBC /* InvitationController.swift in Sources */,
 				5AA29CDE25756A290002F0C5 /* InvitationCell.swift in Sources */,
 				5AA29CE125756A770002F0C5 /* Invitation.swift in Sources */,
 				5A75B63F25632CC5003BBA5D /* TripCell.swift in Sources */,
@@ -558,6 +562,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PPT8LS6UXM;
 				INFOPLIST_FILE = "$(SRCROOT)/GasMoney/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -578,6 +583,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PPT8LS6UXM;
 				INFOPLIST_FILE = "$(SRCROOT)/GasMoney/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -11,7 +11,6 @@ class InvitationCell: UICollectionViewCell {
     
     let invitationLabel: UILabel = {
         let titleLabel = UILabel()
-        titleLabel.text = "___ invited you to a trip!"
         titleLabel.textColor = .black
         titleLabel.font = UIFont.boldSystemFont(ofSize: 14)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -20,7 +19,6 @@ class InvitationCell: UICollectionViewCell {
     
     let destinationLabel: UILabel = {
         let destinationLabel = UILabel()
-        destinationLabel.text = "nowhere"
         destinationLabel.textColor = .gasGray()
         destinationLabel.font = UIFont.systemFont(ofSize: 14)
         destinationLabel.translatesAutoresizingMaskIntoConstraints = false
