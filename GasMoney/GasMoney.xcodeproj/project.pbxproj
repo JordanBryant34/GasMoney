@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A00F7232565F157007D9F1D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A00F7222565F157007D9F1D /* GoogleService-Info.plist */; };
+		5A5099122587EE5B00EEA40D /* GoogleService-Info (3).plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A5099112587EE5B00EEA40D /* GoogleService-Info (3).plist */; };
 		5A75B636256324DE003BBA5D /* TripsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75B635256324DE003BBA5D /* TripsListViewController.swift */; };
 		5A75B63A2563264E003BBA5D /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75B6392563264E003BBA5D /* UIColorExtension.swift */; };
 		5A75B63F25632CC5003BBA5D /* TripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75B63E25632CC5003BBA5D /* TripCell.swift */; };
@@ -45,7 +45,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5A00F7222565F157007D9F1D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5A5099112587EE5B00EEA40D /* GoogleService-Info (3).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (3).plist"; sourceTree = "<group>"; };
 		5A75B635256324DE003BBA5D /* TripsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsListViewController.swift; sourceTree = "<group>"; };
 		5A75B6392563264E003BBA5D /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		5A75B63E25632CC5003BBA5D /* TripCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCell.swift; sourceTree = "<group>"; };
@@ -236,7 +236,7 @@
 		7A2E7E2A255C5AD70095EC1A /* GasMoney */ = {
 			isa = PBXGroup;
 			children = (
-				5A00F7222565F157007D9F1D /* GoogleService-Info.plist */,
+				5A5099112587EE5B00EEA40D /* GoogleService-Info (3).plist */,
 				5ADBE8662565D9E600EE0A18 /* Models */,
 				5ADBE8632565D9BD00EE0A18 /* Controllers */,
 				5A75B63C25632C01003BBA5D /* Views */,
@@ -335,7 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A2E7E38255C5ADC0095EC1A /* LaunchScreen.storyboard in Resources */,
-				5A00F7232565F157007D9F1D /* GoogleService-Info.plist in Resources */,
+				5A5099122587EE5B00EEA40D /* GoogleService-Info (3).plist in Resources */,
 				7A2E7E35255C5ADC0095EC1A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
