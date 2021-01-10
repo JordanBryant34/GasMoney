@@ -24,10 +24,11 @@ class Invitation {
 extension Invitation {
     
     convenience init?(dictionary: [String: Any]) {
-        guard let username = dictionary["username"] as? String else { return nil }
-        guard let tripName = dictionary["tripName"] as? String else { return nil }
-        guard let id = dictionary["id"] as? String else { return nil }
-        guard let tripID = dictionary["tripID"] as? String else { return nil }
+        print("dict")
+        guard let username = dictionary["username"] as? String else { print("27"); return nil}
+        guard let tripName = dictionary["tripName"] as? String else { print("28"); return nil }
+        guard let id = dictionary["id"] as? String else { print("29"); return nil }
+        guard let tripID = dictionary["tripID"] as? String else { print("30"); return nil }
         
         self.init(username: username, id: id, tripName: tripName, tripID: tripID)
     }

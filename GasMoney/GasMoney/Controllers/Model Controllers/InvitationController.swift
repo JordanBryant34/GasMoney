@@ -18,7 +18,7 @@ class InvitationController {
             let id = randomString(length: 25)
             let invitation = Invitation(username: currentUser, id: id, tripName: trip.name, tripID: trip.id)
             let invitationDictionary = invitation.dictionary
-            ref.child("users").child(person).child("invitations").updateChildValues(invitationDictionary())
+            ref.child("users").child(person).child("invitations").child(id).updateChildValues(invitationDictionary())
         }
     }
     
@@ -33,6 +33,7 @@ class InvitationController {
         ref.child("users").child(currentUser).child("invitations").observeSingleEvent(of: .value) { (snapshot) in
             guard let invitationsDictionary = snapshot.value as? [String: Any] else { return completion([])}
             let keys = invitationsDictionary.keys
+            print(invitationsDictionary)
             var invitations: [Invitation] = []
             for key in keys {
                 if let invitationDictionary = invitationsDictionary[key] as? [String : Any] {

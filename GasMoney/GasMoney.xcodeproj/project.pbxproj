@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A5099122587EE5B00EEA40D /* GoogleService-Info (3).plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A5099112587EE5B00EEA40D /* GoogleService-Info (3).plist */; };
 		5A75B636256324DE003BBA5D /* TripsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75B635256324DE003BBA5D /* TripsListViewController.swift */; };
 		5A75B63A2563264E003BBA5D /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75B6392563264E003BBA5D /* UIColorExtension.swift */; };
 		5A75B63F25632CC5003BBA5D /* TripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75B63E25632CC5003BBA5D /* TripCell.swift */; };
@@ -25,6 +24,7 @@
 		5ADBE853256461AC00EE0A18 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADBE852256461AC00EE0A18 /* User.swift */; };
 		5ADBE85B256461C600EE0A18 /* Cost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADBE85A256461C600EE0A18 /* Cost.swift */; };
 		5ADBE85F256481B000EE0A18 /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADBE85E256481B000EE0A18 /* AuthError.swift */; };
+		5ADD843F25ABB897009360EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5ADD843E25ABB896009360EB /* GoogleService-Info.plist */; };
 		7A2D09FA2565863C00C6C77C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2D09F92565863C00C6C77C /* LoginViewController.swift */; };
 		7A2D0A002565886700C6C77C /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2D09FF2565886700C6C77C /* UIViewControllerExtension.swift */; };
 		7A2D0A03256588A400C6C77C /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2D0A02256588A400C6C77C /* UIViewExtension.swift */; };
@@ -45,7 +45,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5A5099112587EE5B00EEA40D /* GoogleService-Info (3).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (3).plist"; sourceTree = "<group>"; };
 		5A75B635256324DE003BBA5D /* TripsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsListViewController.swift; sourceTree = "<group>"; };
 		5A75B6392563264E003BBA5D /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		5A75B63E25632CC5003BBA5D /* TripCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCell.swift; sourceTree = "<group>"; };
@@ -64,6 +63,7 @@
 		5ADBE852256461AC00EE0A18 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5ADBE85A256461C600EE0A18 /* Cost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cost.swift; sourceTree = "<group>"; };
 		5ADBE85E256481B000EE0A18 /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
+		5ADD843E25ABB896009360EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7A2D09F32565840D00C6C77C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "/Downloads/GoogleService-Info.plist"; sourceTree = "<absolute>"; };
 		7A2D09F92565863C00C6C77C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7A2D09FF2565886700C6C77C /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
@@ -236,7 +236,7 @@
 		7A2E7E2A255C5AD70095EC1A /* GasMoney */ = {
 			isa = PBXGroup;
 			children = (
-				5A5099112587EE5B00EEA40D /* GoogleService-Info (3).plist */,
+				5ADD843E25ABB896009360EB /* GoogleService-Info.plist */,
 				5ADBE8662565D9E600EE0A18 /* Models */,
 				5ADBE8632565D9BD00EE0A18 /* Controllers */,
 				5A75B63C25632C01003BBA5D /* Views */,
@@ -335,7 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A2E7E38255C5ADC0095EC1A /* LaunchScreen.storyboard in Resources */,
-				5A5099122587EE5B00EEA40D /* GoogleService-Info (3).plist in Resources */,
+				5ADD843F25ABB897009360EB /* GoogleService-Info.plist in Resources */,
 				7A2E7E35255C5ADC0095EC1A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
